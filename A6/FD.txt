@@ -1,0 +1,41 @@
+TABLE: department
+FDs = {
+    department_id → department_name
+}
+
+TABLE: doctor
+FDs = {
+    doctor_id → full_name, email, department_id
+}
+
+TABLE: pharmacist
+FDs = {
+    pharmacist_id → full_name, email
+}
+
+TABLE: patient
+FDs = {
+    patient_id → first_name, last_name, ohip_number, phone_number, patient_description, dob
+}
+
+TABLE: supplier
+FDs = {
+    supplier_id → supplier_name, phone_number, email, delivery_duration_days, supplier_address
+}
+
+TABLE: medication
+FDs = {
+    (supplier_id, drug_name) → (no non-key attributes)
+}
+Note: This table only contains the composite primary key with no other attributes.
+
+TABLE: supplied_from
+FDs = {
+    (supplier_id, drug_name) → stock
+}
+Note: restock_alert is a virtual computed column derived from stock.
+
+TABLE: prescription
+FDs = {
+    prescription_id → notes, date_created, date_dispensed, patient_id, doctor_id, pharmacist_id, supplier_id, drug_name
+}

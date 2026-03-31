@@ -1,0 +1,9 @@
+==============================================
+      Oracle All Inclusive Tool - Manual
+==============================================
+
+1) Change Editior
+
+    To change editors, set EDITOR env var to the command for your editor of choice
+
+2) 
