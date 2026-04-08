@@ -1,7 +1,7 @@
 # CPS510 - Database Systems I
 
-Assignments covering core relational database concepts, from schema design 
-to normalization and full-stack integration.
+Assignments covering advanced file management techniques involving fundamentals of database organization, design and management. Emphasis is given to Relational Database Management Systems including relational algebra, normal Forms, physical Database Structures and their implementation, and Relational Database Languages. Other types of Database Managers are also discussed such as Hierarchical, Network and Inverted Files.
+
 
 ## Assignments
 
